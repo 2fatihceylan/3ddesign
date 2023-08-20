@@ -94,12 +94,13 @@ export default function UploadScreen(){
         <div style={{"textAlign":"center","justifyContent":"center"}}>
             <form style={{"width":"100%"}}>
             <DropzoneArea
-                acceptedFiles={['image/*']}
+                //acceptedFiles={['image/*']}
                 dropzoneText={"Resimleri buraya sürükleyin veya tıklayın..."}
                 onChange={(files) => setFile(files)}
                 filesLimit={40}
                 showFileNames={true}
                 Icon={DriveFolderUploadIcon}
+                maxFileSize={90000000}  ///file size
             />
             </form>
         </div>
